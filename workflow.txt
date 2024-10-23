@@ -1,0 +1,52 @@
++------------------+
+|   Power On       |
+|   Raspberry Pi   |
++------------------+
+          |
+          v
++------------------+
+|  Boot Sequence   |
+|  (Load OS)       |
++------------------+
+          |
+          v
++------------------+
+| Start `systemd`  |
+| Services          |
++------------------+
+          |
+          v
++------------------+
+| Launch Node.js   |
+| Server (Express) |
++------------------+
+          |
+          v
++------------------+
+|  Initialize      |
+| Serial Port      |
++------------------+
+          |
+          v
++---------------------------+
+| Listen for Incoming Data  |
+| (Button Clicks, Temp, etc.)|
++---------------------------+
+          |
+          v
++---------------------------+
+| Process Events & Update   |
+| LCD Display               |
++---------------------------+
+          |
+          v
++---------------------------+
+| Manage Process Control    |
+| (Heating, Mixing, etc.)   |
++---------------------------+
+          |
+          v
++---------------------------+
+| Continuous Operation      |
+| (Listening for commands)  |
++---------------------------+
